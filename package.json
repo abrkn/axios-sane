@@ -1,0 +1,31 @@
+{
+  "name": "axios-sane",
+  "version": "1.19.0",
+  "description": "Error and stack enhancing axios wrapper",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test"
+  },
+  "keywords": ["axios"],
+  "author": "Andreas Brekken <andreas@brekken.com>",
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@types/lodash": "4.14.146",
+    "@types/node": "12.12.7",
+    "axios": "0.19.0",
+    "lodash": "4.17.15"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.22",
+    "jest": "24.9.0",
+    "ts-jest": "24.1.0",
+    "typescript": "3.7.2"
+  }
+}
